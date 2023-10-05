@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela', sans-serif;
+}
+
+body {
+    background-color: #e6eff4;
+}
+
+
+.container {
+
+    width: 100vw;
+    height: auto;
+}
+
+nav {
+
+    background-color: #27282D;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 0 60px 0 60px;
+    position: fixed;
+    top: 0;
+}
+
+.item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    justify-content: start;
+}
+
+.contact {
+    justify-content: end;
+}
+
+.logo h1 {
+    color: rgb(237, 236, 236);
+}
+
+.menu {
+    list-style-type: none;
+    gap: 30px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(218, 216, 216);
+}
+
+#btn {
+
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(229, 226, 226);
+}
+
+#cont-btn {
+    background-color: #0891AD;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    color: rgb(235, 235, 235);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#cont-btn:hover {
+    transform: translateY(-4px);
+    transition: all 0.1s ease-in-out;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li:hover {
+    transform: translateY(3px);
+
+}
+
+.menu li:hover::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(245, 242, 242);
+    height: 1.5px;
+    top: 100%;
+    left: 0;
+    animation-name: anima;
+    animation-duration: 0.6s;
+}
+
+@keyframes anima {
+    from {
+        width: 0%;
+
+    }
+
+    to {
+        width: 100%;
+
+    }
+
+}
+
+#home {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    padding: 10px;
+
+
+
+
+}
+
+.home-item {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.home-item img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.home-item p {
+    padding: 0 15px 0 15px;
+    font-weight: bold;
+    color: rgb(93, 91, 91);
+
+
+}
+
+#details {
+    margin-top: 60px;
+    width: 100%;
+    height: 300px;
+    background-color: #27282D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+#details h1{
+    color: white;
+    font-weight: bolder;
+    font-size:45px;
+}
+#details p{
+    color: rgb(208, 241, 237);
+}
+#details li{
+    list-style: none;
+    width: 100px;
+    height: 30px;
+    background: none;
+   
+    
+
+    
+}
+#details li a{
+    text-decoration: none;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;
+   color: white
+   
+
+    
+    ;
+}
+
+#about {
+    border: .1rem solid black;
+    width: 100%;
+
+
+}
