@@ -7,39 +7,135 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 <body>
     <div class="container">
         <nav>
             <div class="logo item">
-                <h1>DemoLogo</h1>
+                <h1>Celestial-Logo</h1>
             </div>
             <ul class="menu item">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#details">Details</a></li>
-                <li><a href="#about">About</a></li>
+                <li class="list"><a href="#home">Home</a></li>
+                <li class=" list active"><a href="#details">Details</a></li>
+                <li class="list"><a href="#about">About</a></li>
             </ul>
-            <div class="contact item"><div id="btn"><button id="cont-btn">Contact</button></div></div>
-            
+            <div class="contact item">
+                <div id="btn"><button id="cont-btn">Contact</button></div>
+            </div>
+
         </nav>
-        <div id="details">
-            <h1>WE DESIGN YOUR SPACE..</h1>
-            <p>"Today a reader, tomorrow a leader." – Margaret Fuller</p>
-            <li><a href="#home">Explore</a></li>
+        <div class="content">
+            <div id="details">
+                <h1>WE DESIGN YOUR SPACE..</h1>
+                <p>"Today a reader, tomorrow a leader." – Margaret Fuller</p>
+                <div class="exolorebtn">
+                    <li><a href="#home">Explore</a></li>
+                </div>
+            </div>
+            <div id="home">
+
+                <div class="home-item cont1"><img src="image/img1.jpg" alt=""></div>
+                <div class="home-item">
+                    <p>Books are man’s best friends. Books are portable and so they are easy to carry around. And so
+                        books can be read at any time night or day, while travelling on a bus or train or flight, and at
+                        meal time too. Books are published in many languages and in varied genres.</p>
+                </div>
+                <div class="home-item">
+                    <p>There are many different kinds of books that are published each year. These are the new titles
+                        available for us to read. Besides these, there are books that have been published through the
+                        years. Together, there are millions of books available throughout the world in as many languages
+                        as are spoken by people.</p>
+                </div>
+                <div class="home-item cont2"><img src="image/img2.jpg" alt=""></div>
+            </div>
+
+            <div class="aboutsection">
+                <div id="about">
+                    <img src="image/bck.jpg" alt="">
+                </div>
+                <div class="about-details">
+                    <div class="det"></div>
+                    <div class="det"></div>
+                    <div class="det"></div>
+
+                </div>
+            </div>
+            <footer>
+                <div class="ftr-div address">
+                    <div class="add">
+                        <div class="png"><img src="image/nav.png" alt=""></div>
+                        <p class="addcont">
+                           399 4th main 4th cross Further Extension, Viveknagar-560043 Bangalore
+                        <p>
+                    </div>
+                    <div class="add">
+                        <div class="png"><img src="image/phone.png" alt=""></div>
+                        <p class="addcont"> +91-8765239112</p>
+                    </div>
+                    <div class="add">
+                        <div class="png"> <img src="image/email.png" alt=""></div>
+                        <p class="addcont">
+                            work.cel@gmail.com
+                           
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="ftr-div ftr-div2-div">
+                    <div>
+                        <p>
+                            Terms
+                        </p>
+                        <ul>
+                            <li>Terms of Use</li>
+                            <li>Privacy Policy</li>
+                            <li>Refund Policy</li>
+                            <li>Cookies Policy</li>
+                            <li>FAQ's</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>
+                           Company
+                        </p>
+                        <ul>
+                            <li>Support</li>
+                            <li>About</li>
+                            <li>Our license</li>
+                            <li>Pricing</li>
+                            <li>What's new</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="ftr-div"></div>
+            </footer>
+
         </div>
-        <div id="home">
-
-            <div class="home-item cont1" ><img src="img1.jpg" alt=""></div>
-            <div class="home-item"><p>Books are man’s best friends. Books are portable and so they are easy to carry around. And so books can be read at any time night or day, while travelling on a bus or train or flight, and at meal time too. Books are published in many languages and in varied genres.</p></div>
-            <div class="home-item"><p>There are many different kinds of books that are published each year. These are the new titles available for us to read. Besides these, there are books that have been published through the years. Together, there are millions of books available throughout the world in as many languages as are spoken by people.</p></div>
-            <div class="home-item cont2"><img src="img2.jpg" alt=""></div>
-        </div>
-  
-        <div id="about">about section</div>
 
 
-    </div>
+
+
+
+
+        <script>
+            const list = document.querySelectorAll(".list")
+            list.forEach(item => {
+
+                item.addEventListener('click', () => {
+                    list.forEach(btn => btn.classList.remove("active"))
+                    item.classList.add("active")
+                })
+
+            })
+
+
+
+
+
+        </script>
 
 
 
