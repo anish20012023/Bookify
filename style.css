@@ -33,6 +33,7 @@ nav {
     padding: 0 60px 0 60px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .item {
@@ -74,13 +75,19 @@ nav {
 }
 
 #cont-btn {
-    background-color: #0891AD;
+    background-color: #1ca8c5;
     width: 100%;
     height: 100%;
     border-style: none;
-    color: rgb(235, 235, 235);
+    color: rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
+}
+#cont-btn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+   
 }
 
 #cont-btn:hover {
@@ -100,8 +107,8 @@ nav {
 .menu li:hover::after {
     content: "";
     position: absolute;
-    background-color: rgb(245, 242, 242);
-    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
     top: 100%;
     left: 0;
     animation-name: anima;
@@ -116,6 +123,7 @@ nav {
     width: 100%;
     top: 100%;
     left: 0;
+    
 
 }
 
@@ -243,29 +251,72 @@ nav {
     height: 450px;
     display: flex;
     position: relative;
-
-
-
-
-
-
-}
-
-#about img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-
+    background-image: url("image/img4.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
+#about p{
+   
+    background-color: #27282D;
+    color:white;
+    width: 250px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    animation: beforhover 0.5s;
+
+}
+#about p:hover{
+    color: rgb(100, 130, 239);
+    animation: afterhover 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
 
 .aboutsection {
     position: relative;
     background-color: white;
     height: 750px;
+   background-image: url("image/img5.png");
 
+   background-size: 100% 100%;
+
+
+}
+@keyframes afterhover{
+    0%{
+        font-size: 30px;
+    }
+    100%{
+        font-size: 35px;
+    color: #27282D;;
+        background-color: white;
+        font-weight: bolder;
+        border-radius: 15px;
+    }
+    
+    
+}
+@keyframes beforhover {
+    0%{
+        font-size: 35px;
+        border-radius: 15px;
+    }
+    100%{
+        font-size: 30px;
+       border-radius:0px;
+        color: #ffffff;
+    }
+    
+    
 }
 
 .about-details {
@@ -277,6 +328,8 @@ nav {
     background: none;
     position: absolute;
     bottom: 16%;
+    
+   
 
 
 
@@ -297,7 +350,105 @@ nav {
 
 .det:hover {
     box-shadow: 1px 1px 8px rgb(46, 46, 46);
-    transform: translateY(-10px);
+    transform: translateY(-20px);
+
+}
+
+.cnt-div{
+    width: 100%;
+   height: 500px;
+    background-image: url("image/img2.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.main-cnt{
+    width: 60%;
+    height:80%;
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+}
+.formdiv{
+     height: 100%;
+    width: 60%;
+}
+.cnt-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.cnt-img img{
+    width: 100%;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+form p{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+form input{
+    border: 1px solid;
+    width: 60%;
+   height: 35px;
+ background-color: #E7E7E7;
+ border: none;
+ border-radius:30px;
+ padding-left: 20px;
+ font-weight: bold;
+ font-size: 13px;
+ outline-color: #816DD7;
+
+ 
+}
+
+form textarea{
+    width: 60%;
+    resize: none;
+    height: 100px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: none;
+    background-color: #E7E7E7;
+    font-weight: bold;
+ font-size: 13px;
+ outline-color: #816DD7;
+   
+   
+
+   
+}
+form button{
+    width: 60%;
+    border: none;
+    height:35px ;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #816DD7;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+form button:hover{
+    width: 55%;
+    font-size:15px ;
+    transition: all 0.3s;
 
 }
 
