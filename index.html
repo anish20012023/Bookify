@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>anish@project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
 
 
@@ -14,16 +18,22 @@
     <div class="container">
         <nav>
             <div class="logo item">
-                <h1>Celestial-Logo</h1>
+                <h1>Logo</h1>
             </div>
-            <ul class="menu item">
-                <li class="list"><a href="#home">Home</a></li>
-                <li class=" list active"><a href="#details">Details</a></li>
-                <li class="list"><a href="#about">About</a></li>
-            </ul>
+            <input type="checkbox" id="ham">
+            <div class="nav-main">
+                <label for="ham" id="close-ham"> <i class="fa fa-times" aria-hidden="true"></i></label>
+
+                <ul class="menu item">
+                    <li class="list"><a href="#home">Home</a></li>
+                    <li class=" list active"><a href="#details">Details</a></li>
+                    <li class="list"><a href="#about">About</a></li>
+                </ul>
+            </div>
             <div class="contact item">
-                <div id="btn"><button id="cont-btn" ><a href="#contact">Contact</a></button></div>
+                <div id="btn"><button id="cont-btn"><a href="#contact">Contact</a></button></div>
             </div>
+            <label for="ham" id="open-ham" class="logo item"><i class="fa fa-bars" aria-hidden="true"></i></label>
 
         </nav>
         <div class="content">
@@ -57,33 +67,40 @@
 
                 </div>
                 <div class="about-details">
-                    
-                    <div class="det w1" >
+
+                    <div class="det w1">
                         <img src="image/w1.jpg" alt="">
-                        
-                        <div class="det-inside"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eius?</p></div>
+
+                        <div class="det-inside">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eius?</p>
+                        </div>
                     </div>
                     <div class="det w2">
                         <img src="image/w2.jpg" alt="">
-                        <div class="det-inside"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo fugiat quaerat neque quisquam!</p></div>
+                        <div class="det-inside">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo fugiat quaerat
+                                neque quisquam!</p>
+                        </div>
                     </div>
                     <div class="det w3">
                         <img src="image/w3.jpg" alt="">
-                        <div class="det-inside"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint enim mollitia est.</p></div>
+                        <div class="det-inside">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint enim mollitia est.</p>
+                        </div>
                     </div>
 
                 </div>
             </div>
             <div class="cnt-div" id="contact">
                 <div class="main-cnt ">
-                    <div class="cnt-img formdiv"> <img src="image/msg.jpg" ></div>
-                <form  class="formdiv">
-                    <p>Get in touch</p>
-                    <input type="text" placeholder="Name" >
-                    <input type="email" placeholder="Email">
-                   <textarea placeholder="Message"></textarea>
-                   <button type="submit">Send</button>
-                </form>
+                    <div class="cnt-img formdiv"> <img src="image/msg.jpg"></div>
+                    <form class="formdiv">
+                        <p>Get in touch</p>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
             </div>
 
@@ -93,7 +110,7 @@
                     <div class="add">
                         <div class="png"><img src="image/nav.png" alt=""></div>
                         <p class="addcont">
-                           399 4th main 4th cross Further Extension, Viveknagar-560043 Bangalore
+                            399 4th main 4th cross Further Extension, Viveknagar-560043 Bangalore
                         <p>
                     </div>
                     <div class="add">
@@ -104,10 +121,10 @@
                         <div class="png"> <img src="image/email.png" alt=""></div>
                         <p class="addcont">
                             work.cel@gmail.com
-                           
+
                         </p>
                     </div>
-                    
+
                 </div>
                 <div class="ftr-div ftr-div2-div">
                     <div>
@@ -124,7 +141,7 @@
                     </div>
                     <div>
                         <p>
-                           Company
+                            Company
                         </p>
                         <ul>
                             <li>Support</li>
@@ -134,14 +151,14 @@
                             <li>What's new</li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="ftr-div social-link">
-                    <div class="scl-mda-icon"><img  src="image/instagram.png" alt=""></div>
-                    <div class="scl-mda-icon"><img  src="image/facebook.png" alt=""></div>
-                    <div class="scl-mda-icon"><img  src="image/linkedin.png" alt=""></div>
-                    <div class="scl-mda-icon"><img  src="image/twitter.png" alt=""></div>
-              
+                    <div class="scl-mda-icon"><img src="image/instagram.png" alt=""></div>
+                    <div class="scl-mda-icon"><img src="image/facebook.png" alt=""></div>
+                    <div class="scl-mda-icon"><img src="image/linkedin.png" alt=""></div>
+                    <div class="scl-mda-icon"><img src="image/twitter.png" alt=""></div>
+
 
                 </div>
             </footer>
