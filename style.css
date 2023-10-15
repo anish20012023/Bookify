@@ -19,6 +19,8 @@ html {
 
 body {
     background-color: #e6eff4;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
